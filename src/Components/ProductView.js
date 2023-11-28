@@ -135,7 +135,7 @@ const ProductView = () => {
 
 
                         <div className="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
-                            <img src="https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg" alt="Model wearing plain white basic tee." className="h-full w-full object-cover object-center" />
+                            <img src={`http://localhost:3000/${data.imageurl}`} alt="Model wearing plain white basic tee." className="h-full w-full object-cover object-center" />
                         </div>
                     </div>
 

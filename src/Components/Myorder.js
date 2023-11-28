@@ -9,11 +9,9 @@ const Myorder = () => {
     const [orders, setorders] = useState([])
     const checkUser = async()=>{
         if(localStorage.getItem('shopzy') ){
-            console.log('user is here ')
             const token = localStorage.getItem('shopzy')
             const res = await  fetch(`http://localhost:3000/api/order/myorder/${token}`)
             const data = await res.json(); 
-            console.log(data)
             setorders(data.data)
         }
         else{

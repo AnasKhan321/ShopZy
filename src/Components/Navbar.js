@@ -115,7 +115,7 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between  md:flex-row flex-col   px-2 py-4   shadow-xl  items-center  shadow-sky-100 " >
       <div className="logo  text-3xl text-sky-500 font-bold px-4 cursor-pointer   ">
-        <Link to='/' > Shopzy </Link> 
+        <Link to='/'  className="logo"> Shopzy </Link> 
         
       </div>
 

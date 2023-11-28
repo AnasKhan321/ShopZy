@@ -1,7 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'; 
+import Image from '../Images/23.png'
 
 const Footer = () => {
+    const stylee = {
+        "transform": "scale(1.2)"
+    }
   return (
     
 <footer className="bg-white  bg-sky-100  mt-6  ">
@@ -10,7 +14,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
               <Link to="/" className="flex items-center">
                  
-                  <span className="self-center font-bold  text-sky-700 text-2xl font-semibold whitespace-nowrap ">Shopzy</span>
+                  <span className="self-center font-bold  text-sky-700 text-2xl font-semibold whitespace-nowrap "> <img src={Image} alt="" width="150px " style={stylee}  /> </span>
               </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">

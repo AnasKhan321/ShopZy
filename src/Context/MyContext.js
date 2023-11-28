@@ -11,11 +11,9 @@ const MyContextProvider = ({ children }) => {
   useEffect(()=>{
     if(localStorage.getItem('cart')){
         setcart( JSON.parse( localStorage.getItem('cart')))
-        console.log('this isehre')
     }
     if(localStorage.getItem('bill')){
       setbill(  parseInt( localStorage.getItem('bill')))
-      console.log(localStorage.getItem('bill'))
     }
   },[])  
   
@@ -24,7 +22,6 @@ const MyContextProvider = ({ children }) => {
     console.log(updatedcart)
     
     Object.keys(updatedcart).map((e)=>{
-      console.log(e)
       totalbill+=updatedcart[e].price * updatedcart[e].qty 
     })
     console.log(bill)
@@ -34,7 +31,6 @@ const MyContextProvider = ({ children }) => {
   const savetoLocalStore = (data ,bill2)=>{
     localStorage.setItem('cart', JSON.stringify(data));
     localStorage.setItem('bill' , bill2)
-    
   }
 
   return (

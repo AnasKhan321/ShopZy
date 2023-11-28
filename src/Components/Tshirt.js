@@ -5,10 +5,8 @@ const Tshirt = (props) => {
     const [data, setdata] = useState([]); 
 
     const fetchdata = async()=>{
-
         const res =  await fetch(`http://localhost:3000/api/product/categoryproduct/T-shirt`)
         const data = await res.json(); 
-        console.log(data)
         setdata(data.data)
         
     }
